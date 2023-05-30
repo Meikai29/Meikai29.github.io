@@ -1,0 +1,151 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+nav{
+    position: fixed;
+    width: 100%;
+    height: 55px;
+    background-color: #222;
+    border-bottom: 1px solid white;
+    padding-top: 10px;
+    text-align: center;
+}
+nav ul{
+    display:inline-block;
+}
+nav ul li{
+    padding-top: 12px;
+    text-transform: uppercase;
+}
+body{
+    background-color: #fff;
+    color: #222;
+    font: 200 14px 'Poppins', sans-serif;
+}
+h1{
+    font-size: 42px;
+    font-weight: 400;
+}
+h2{
+    font-size: 36px;
+    font-weight: 300;
+}
+h3{
+    color: #ffc900;
+    font-weight: 200;
+}
+section{
+    padding: 10px 100px 10px 100px;
+}
+p{
+    text-align: justify;
+}
+thead{
+    background-color: #222;
+    color: white;
+}
+td{
+    min-width: 150px;
+}
+ul{
+    list-style: none;
+}
+li{
+    float: left;
+    list-style: none;
+}
+i{
+    margin-right: 5px;
+}
+a:any-link{
+    color: white;
+}
+a:-webkit-any-link{
+    color: white;
+}
+a:-moz-any-link{
+    color: white;
+}
+a:hover{
+    color: #ffc900;
+}
+a{
+    text-decoration: none;
+}
+/*Definiciones de clases y ids*/
+#datoscontenedor{
+    display: flex;
+    column-gap: 10px;
+}
+#datos{
+    padding-top: 75px;
+}
+#educacion{
+    background-color: #222;
+    color: #fff;
+}
+#experiencia{
+    background-color: #222;
+    color: #fff;
+    border-top: 1px solid #ffc900;    
+}
+#comentario{
+    background-color: #ffc900;
+    color: #222;
+    border-top: 1px solid #ffc900;
+}
+.enlace:hover{
+    color: #ffc900;
+}
+.logo{
+    padding-top: 0px;
+}
+/*Card educacion*/
+.gridedu{
+    display: grid;
+    grid-template-columns: repeat(3,350px);
+    grid-gap: 10px;
+    justify-content: space-between;
+    align-content: space-around;
+
+}
+.cardedu img{
+    border-radius: 15px 15px 0 0;
+    margin-bottom: 15px;
+}
+.cardedu{
+    background-color: #333;
+    border-radius: 15px;
+    color: white;
+    padding: 10px 15px;
+}
+.cardedu h3{
+    margin-bottom: 20px;
+    border-top: 1px solid #ffc900;
+}
+.cardedu p{
+    margin-bottom: 20px;
+}
+/*Formulario*/
+.itemform{
+    display: grid;
+    grid-template-columns: 150px 350px;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+.itemform label{
+    font-weight: 700;
+}
+.itemform input,.itemform textarea,.itemform select{
+    border-radius: 5px;
+    border: 1px solid white;
+}
+input[type="submit"]{
+    background-color: #222;
+    border: 1px solid #222;
+    color: white;
+    padding: 10px;
+    grid-column: 2/3;
+    justify-self: end;
+}
